@@ -1,61 +1,102 @@
-Project Title - "TutorialsNinja" My Account Functionality Testing
+Project Title - TutorialsNinja(Qafox.com) Cypress Automation Scripts
 
-
-Project Description: This project focuses on evaluating the functionality, performance, and usability of the 'My Account' feature on the OpenCart demo e-commerce website hosted by TutorialsNinja 
-
-
-AUT - https://tutorialsninja.com/demo/
+his repository contains a Cypress test suite automating various functionalities on the TutorialsNinja demo website 
+(https://tutorialsninja.com/demo/)
 
 Objectives:
 
-1)Functional Testing:
-Evaluate the accuracy, completeness, and reliability  of the 'My Account' feature.
+To check all the key functionalities of HomePage is working fine 
+1-search bar Functionality
+2-Add to cart functionality
+3-Alert Messages 
+4-Navigations
 
-2)Usability Testing: 
-Assess the ease of use, clarity, and overall user experience of the 'My Account' feature.
+
+Tools Used:
+
+Programming Language: JavaScript
+Framework: Cypress, Mocha 
+IDE: Visual Studio Code
+Browser: Chrome (or default Cypress browser)
 
 
-Project Deliverables:
+Pre-requisites:
 
-Mind Map: Visual representation of the 'My Account' feature functionalities and their relationships.
-
-Test Plan: Comprehensive document outlining the testing strategy, test environment, and test cases.
-
-Test Scenarios: Description of the Test cases
-
-Test Cases: Detailed scenarios and steps for functional and usability testing.
-
-Test Execution Report: Summary of test execution results, including pass/fail status and any identified defects.
-
-Bug Report: Detailed documentation of defects identified, including severity levels, screenshots, and video recordings.
-
-Summary Report: Recommendations for improving the user experience based on usability testing observations.
-
-Project Structure:
-├── Documentation  
-│   ├── Mind Map.xmind
-│   ├── Test Plan.pdf 
-│   ├── Test scenarios.xlsx
-│   ├── Test Execution Report.xlsx  
-│   ├── Bug Report.xlsx  
-│   └── Summary Report.pdf
+Basic understanding of JavaScript programming.
+Familiarity with HTML elements (like id, class, name)
 
 
 Instructions:
 
-Review the Documentation: Familiarize yourself with the project objectives, deliverables, and structure.
+Setup:
+-Install Node.js and npm.
+-Open a terminal and navigate to the project directory.
+-Run npm install to install Cypress dependencies.
 
-Create Mind Map: Visualize the 'My Account' feature and its sub-components (e.g.login, registration, forgot password, Edit information, etc).
+Project Structure:
+cypress/ - Contains Cypress test files and supporting files.
+integration/ -  Contains the actual test scripts.
+support/ - Contains utility functions and custom commands.
+fixtures/- Holds test data and configuration files.
+config.js - Stores environment configurations like the base URL.
 
-Develop Test Plan: Defined the scope, test environment, test data, and test execution process.
+Running Tests:
+-From the project directory, npx cypress run command launch the Cypress test runner.
+-Choose a test file to execute.
 
-Design Test Cases: Development of  comprehensive test cases covering all relevant functionalities and scenarios.
+Code Breakdown
+HomePage- Represents the main page of the TutorialsNinja website
+commands.js- Contains custom commands like login, logout, etc.
+login.js - Login to the page by entering Valid data 
+AddtoCart.js - search the product, open the product, Adding to the cart 
+Search.js - Search bar functionality enter multiple  products and check that shows all products or not
+Nevigations.js - navigate the page functionalities
+MouseHover.js - Checking mousehover actions for various products 
+Logo.js - check the Logo of the page 
 
-Execute Tests: Perform functional and usability testing according to the defined test cases, capturing results and any defects encountered.
+Key Features
+Configuration File - config.js for storing environment variables like base URL.
+Assertions - Verify expected behavior using Cypress assertions.
+Waits- Ensure elements are visible and interactive before performing actions.
+Screenshots- Capture screenshots on test failures for debugging.
 
-Document Findings: Create test execution reports, defect reports, and usability feedback based on the testing results.
 
-Submit Deliverables: Organize and submit all project deliverables in the specified format.
+Project Setup:
+-Clone the repository.
+-Install dependencies: npm install.
+-Update the config.js file with the desired base URL.
+-Run tests: npx cypress open.
+
+GitHub:
+This project will be pushed to a new GitHub repository for version control and collaboration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
